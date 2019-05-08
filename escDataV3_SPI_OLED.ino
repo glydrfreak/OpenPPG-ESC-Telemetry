@@ -10,7 +10,7 @@
 //#include <Fonts/FreeSans9pt7b.h>
 
 #define VBATPIN         9
-#define FAKE_GROUND     5  //MOSI pin used as general IO
+#define FAKE_GROUND     5
 #define OLED_CS         10
 #define OLED_RESET      11
 #define OLED_DC         12

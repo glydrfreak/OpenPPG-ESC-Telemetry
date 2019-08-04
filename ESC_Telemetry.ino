@@ -77,11 +77,6 @@ void loop() {
     readMillis = millis();
     prepareSerialRead();
     Serial1.readBytes(escData, ESC_DATA_SIZE);
-    transmitted++;
-    if(transmitted>=ESC_TIMEOUT) {
-      transmitted = 1;
-      failed = 0;
-    }
   }
 
   //enforceChecksum();

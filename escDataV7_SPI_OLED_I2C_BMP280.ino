@@ -264,11 +264,11 @@ void enforceChecksum(){
     //Serial.println("_________________________________________________CHECKSUM FAILED!");
     failed++;
     if(failed>=1000) {
-    transmitted = 1;
-    //failed = 0;
-  }
+      transmitted = 1;
+      //failed = 0;
+    }
     for(int i=0; i<ESC_DATA_SIZE; i++){
-      escData[i] = prevData[i];
+      escData[i] = prevData[i];   // reverts to previous data if checksum is bad
     }
   }
   for(int i=0; i<ESC_DATA_SIZE; i++){

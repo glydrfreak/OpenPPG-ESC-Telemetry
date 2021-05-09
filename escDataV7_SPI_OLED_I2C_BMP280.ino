@@ -4,6 +4,22 @@
  * and BMP280 altimeter in the I2C configuration.
  * As long as the transmission intervals are no faster than
  * 24ms, the data transfer success rate should be 100%.
+ * 
+ * ____SPI_OLED____|____FEATHER____
+ *  VCC            | 3V3
+ *  GND            | GND
+ *  SDA            | MOSI
+ *  SCL            | SCK
+ *  D/C            | 11
+ *  RES            | 12
+ *  CS             | 10
+ *  
+ *  ___I2C_BMP280__|____FEATHER____
+ *   VCC           | 3V3
+ *   GND           | GND
+ *   SCL           | SCL
+ *   SDA           | SDA
+ * 
  */
 
 #include "BMP280.h"
